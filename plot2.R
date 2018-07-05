@@ -17,7 +17,7 @@ BaltimoreEmAgg <- aggregate(BaltimoreEm[,'Emissions'], by=list(BaltimoreEm$year)
 # Change names
 names(BaltimoreEmAgg) <- c("year", "emissions")
 
-# Barplotting (optional)
+# Barplotting
 barplot(BaltimoreEmAgg$emission
         , names.arg = BaltimoreEmAgg$year
         , xlab = "year"

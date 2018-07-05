@@ -13,7 +13,7 @@ EmissionsAgg <- aggregate(NEI[,'Emissions'], by=list(NEI$year), sum)
 # Change columns names
 names(EmissionsAgg) <- c("year", "TotEmission")
 
-# Barplotting (optional)
+# Barplotting
 barplot(EmissionsAgg$TotEmission
         , names.arg = EmissionsAgg$year
         , xlab = "year"

@@ -4,7 +4,7 @@
 #   California (\color{red}{\verb|fips == "06037"|}fips=="06037"). 
 #   Which city has seen greater changes over time in motor vehicle emissions?
 
-# Library stuff
+# Library
 library(ggplot2)
 
 # Read data

@@ -18,7 +18,7 @@ BaltEM <- subset(NEI, fips == 24510)
 # Factoring $year
 BaltEM$year <- factor(BaltEM$year, levels = c("1999", "2002", "2005", "2008"))
 
-# Barplotting
+# Barplotting - one boxplot per type
 g <- ggplot(data = BaltEM, aes(x = year, y = log(Emissions))) +
       facet_grid(. ~type) +
       guides(fill = F) + 
